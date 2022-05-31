@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { formatOffset, parseZoneInfo, isUndefined, objToLocalTS } from "../impl/util.js";
 import Zone from "../zone.js";
 
