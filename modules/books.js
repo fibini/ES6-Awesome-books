@@ -14,7 +14,7 @@ export class Storage {
   }
 }
 
-export const bookList = Storage.initiateBooksData();
+export let bookList = Storage.initiateBooksData();
 
 export class Books {
   constructor(title, author, id) {
