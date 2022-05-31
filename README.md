@@ -1,34 +1,37 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# ES6 Awesome Books
 
 > Description the project.
+build a site with javascript es6 syntax that allows you to add and remove your favorite books.
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- Javascript
+- Html
+- CSS
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](http://127.0.0.1:5500/Microverse%20Repos/ES6-Awesome-books/index.html?)
 
 
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
 
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
+Github profile and code editor
 
 ### Setup
+copy the repository from the drop down code menu
 
 ### Install
+clone the repository to your local machine through your code editor using git clone
+
+git clone git@github.com:fibini/ES6-Awesome-books.git
 
 ### Usage
 
@@ -42,15 +45,11 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@fibini](https://github.com/fibini)
+- Twitter: [@Onenewpage1](https://twitter.com/Onenewpage1)
+- LinkedIn: [fabien brathwaite](https://www.linkedin.com/in/fabien-brathwaite-91150822a/)
 
 👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
 
@@ -70,4 +69,3 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
