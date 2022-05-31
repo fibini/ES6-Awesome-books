@@ -1,14 +1,13 @@
-import { Books } from "./books.js";
-import { bookList } from "./books.js";
+import { Books, bookList } from './books.js';
 
-export class Render {
+export default class Render {
   static renderBooks() {
-    let bookSection = document.querySelector(".box");
-    let bookListElement = document.createElement("div");
-    bookListElement.id = "bookList";
+    const bookSection = document.querySelector('.box');
+    const bookListElement = document.createElement('div');
+    bookListElement.id = 'bookList';
     bookList.forEach((book) => {
-      let bookElem = new Books(book.title, book.author, book.id);
-      let bookElement = Books.createBook(bookElem);
+      const bookElem = new Books(book.title, book.author, book.id);
+      const bookElement = Books.createBook(bookElem);
       bookSection.append(bookElement);
     });
   }

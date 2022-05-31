@@ -1,13 +1,12 @@
-//import Storage from "./storage.js"
-//import { bookList } from "../index.js";
+/* eslint-disable */
 
 export class Storage {
   static storeData() {
-    localStorage.setItem("bookList", JSON.stringify(bookList));
+    localStorage.setItem('bookList', JSON.stringify(bookList));
   }
 
   static initiateBooksData() {
-    const initialBooks = localStorage.getItem("bookList");
+    const initialBooks = localStorage.getItem('bookList');
     if (initialBooks) {
       return JSON.parse(initialBooks);
     }
@@ -15,7 +14,7 @@ export class Storage {
   }
 }
 
-export let bookList = Storage.initiateBooksData();
+export const bookList = Storage.initiateBooksData();
 
 export class Books {
   constructor(title, author, id) {
@@ -24,31 +23,31 @@ export class Books {
     this.id = id;
   }
 
-  static createBook({ title, author, id } ) {
-    let newBook = document.createElement("div");
-    let titlePara = document.createElement("p");
-    let authorPara = document.createElement("p");
-    let remove = document.createElement("button");
-    remove.setAttribute("id", this.id);
+  static createBook({ title, author, id }) {
+    const newBook = document.createElement('div');
+    const titlePara = document.createElement('p');
+    const authorPara = document.createElement('p');
+    const remove = document.createElement('button');
+    remove.setAttribute('id', this.id);
     titlePara.textContent = this.title;
     authorPara.textContent = this.author;
-    let completeBook = `"${title}" by ${author}`;
-    remove.textContent = "Remove";
-    newBook.classList.toggle("grey", id % 2 !== 0);
-    newBook.classList.toggle("white", id % 2 === 0);
-    newBook.classList.add("position");
-    remove.classList.add("remove");
+    const completeBook = `"${title}" by ${author}`;
+    remove.textContent = 'Remove';
+    newBook.classList.toggle('grey', id % 2 !== 0);
+    newBook.classList.toggle('white', id % 2 === 0);
+    newBook.classList.add('position');
+    remove.classList.add('remove');
 
     newBook.append(completeBook);
     newBook.append(remove);
-  
-    remove.addEventListener("click", (e) => {
+
+    remove.addEventListener('click', (e) => {
       e.preventDefault();
       bookList = bookList.filter((book) => book.id !== id);
       newBook.remove();
       Storage.storeData();
     });
-     return newBook;
+    return newBook;
   }
 
   static generateId() {
@@ -58,5 +57,3 @@ export class Books {
     return -1;
   }
 }
-
-
